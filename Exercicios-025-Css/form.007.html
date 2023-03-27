@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulário 07</title>
+</head>
+<body>
+     <h1>Formulário 07</h1>
+     <form action="cadastro.javascript.html" method="post" autocomplete="on">
+
+         <p>
+          <label for="iloc">Local</label>
+          <select name="local" id="ilocal" required>
+             
+               <option value="" selected> --Escolha--</option>
+               <optgroup label="Províncias">
+                    <option value="">Luanda</option>
+                    <option value="">Benguela</option>
+                    <option value="">Huambo</option>
+               </optgroup>
+                 
+               <optgroup label="Municípois">
+                    <option value="Vn">Viana</option>
+                    <option value="">Cazenga</option>
+                    <option value="">Cacuaco</option>
+                    <option value="">Belas</option>
+
+               </optgroup>
+          </select>
+         </p>
+            
+         <p>
+          <label for="iprof">Profissão:</label>
+          <input type="text" name="prof" id="iprof" list="lstprof" placeholder="digita a sua rofissão"  required>
+          <datalist id="lstprof">
+               <option value="">Dessnvolvedor</option>
+               <option value="">Policía</option>
+               <option value="">Prsidente</option>
+               <option value="">Jogador</option>
+               <option value="">Professor</option>
+          </datalist>
+         </p>
+
+    <p>
+     <label for="imsg">Mensagem:</label><br>
+     <textarea name="msg" id="imsg" cols="30" rows="10" placeholder=" digita uma mensagem" required></textarea>
+    </p>
+          <p>
+               <input type="submit" value="Enviar"> 
+               <input type="reset" value="Limpar">
+          </p>
+     </form>
+</body>
+</html>
