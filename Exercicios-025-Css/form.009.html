@@ -8,16 +8,13 @@
 </head>
 <body>
      <h1>Formulário 9</h1>
-     <form action="" method="post">
+     <form action="cadastro.javascript.html" method="post">
+          <p>
+               <label for="inum">Número</label>
+               <input type="range" name="num" id="inum" min="0" max="100" value="1" oninput="ival.innerHTML = Number(inum.value)">
+               <output id="ival" >5</output>
 
-
-
-
-
-
-
-
-
+          </p>
 <p>
      <input type="submit" value="Enviar">
      <input type="reset" value="Limpar">
